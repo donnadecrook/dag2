@@ -13,4 +13,5 @@ public class Movie {
     public String toString() {
         return title + " " + duurInMinuten + " " + genre;
     }
+    Movie film = new Movie("Dune", 155, "Sci-Fi");
 }
