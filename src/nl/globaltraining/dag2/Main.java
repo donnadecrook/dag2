@@ -17,6 +17,8 @@ public class Main {
         films.add(new Movie ("Harry Potter", 103, "Fantasy"));
         films.add(new Movie ("Verliefd op Ibiza", 81, "Romantisch"));
 
+        films.remove(1);
+
        int nummer = 1;
        for (Movie film : films) {
            System.out.println(nummer + ". " + film);
