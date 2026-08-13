@@ -17,25 +17,9 @@ public class Main {
         films.add(new Movie ("Harry Potter", 103, "Fantasy"));
         films.add(new Movie ("Verliefd op Ibiza", 81, "Romantisch"));
 
-        Movie dune = new Movie("Dune", 155, "Sci-Fi");
-        Movie barbie = new Movie("Barbie", 93, "Fantasy");
-        Movie up = new Movie("Up", 81, "Fantasy");
-
-        Customer donna = new Customer("Donna", 25, "donna@mail.com", TRUE);
-        Customer sam = new Customer("Sam", 34, "sam@mail.com", FALSE);
-
-        System.out.println("=== Films ===");
-        System.out.println(dune);
-        System.out.println(barbie);
-        System.out.println(up);
-
-        System.out.println();
-        System.out.println("=== Klanten ===");
-        System.out.println(donna);
-        System.out.println(sam);
-
-        System.out.println("=== Bon ===");
-        Booking b1 = new Booking(donna, up, 2, "3D");
-        b1.toonBon();
+       int nummer = 1;
+       for (Movie film : films) {
+           System.out.println(nummer + ". " + film);
+       }
     }
 }
