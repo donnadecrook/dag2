@@ -20,6 +20,8 @@ public class Main {
        int nummer = 1;
        for (Movie film : films) {
            System.out.println(nummer + ". " + film);
+           nummer++;
        }
+        System.out.println("In totaal " + films.size() + " films");
     }
 }
