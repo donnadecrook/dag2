@@ -50,6 +50,7 @@ public class Booking {
         double totaal = prijs * aantalKaartjes;
         return totaal;
     }
+    double prijsPerKaartje = berekenPrijsPerKaartje();
 
     public void toonBon() {
         System.out.println("Klant: " + klant);
@@ -57,7 +58,7 @@ public class Booking {
         System.out.println("Zaaltype: " + zaaltype);
         System.out.println("Aantal: " + aantalKaartjes);
         System.out.println("Prijs per kaartje: " + berekenPrijsPerKaartje());
-        System.out.println("Totaal: " + berekenTotaal(berekenPrijsPerKaartje()));
+        System.out.println("Totaal: " + berekenTotaal(prijsPerKaartje));
     }
 
     public Customer getKlant() {

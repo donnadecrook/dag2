@@ -23,7 +23,7 @@ public class Main {
        }
         System.out.println("In totaal " + films.size() + " films");
     }
-    public Movie zoekOpTitel(String title, ArrayList<Movie> films) {
+    public static Movie zoekOpTitel(String title, List<Movie> films) {
         for (Movie film: films){
             if (film.getTitle().equals(title)){
                 return film;
@@ -32,7 +32,8 @@ public class Main {
         return null;
     }
     List<Movie> result = new ArrayList<>();
-        for (Movie film : films) {
+
+    for (Movie film : films) {
         if (film.getGenre().equals("Fantasy")) {
             result.add(film);
         }

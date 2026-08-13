@@ -34,6 +34,12 @@ public class Movie {
     public String getGenre() {
         return genre;
     }
+    public void setGenre(String genre) {
+        if (genre == null || genre.isBlank()) {
+            System.out.println("Ongeldige genre: mag niet leeg zijn");
+            return;
+        }
+    }
     public String toString() {
         return title + ", " + duurInMinuten + " min, " + genre + " ";
     }

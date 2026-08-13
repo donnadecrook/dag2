@@ -4,7 +4,7 @@ public class Customer {
     private String name;
     private int age;
     private String email;
-    boolean student;
+    private boolean student;
 
     public Customer(String name, int age, String email, boolean student) {
          setName(name);
@@ -31,6 +31,15 @@ public class Customer {
             return;
         }
             this.age = age;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        if (email == null || email.isBlank()) {
+            System.out.println("Ongeldige invoer");
+            return;
+        }
     }
     public boolean isStudent() {
         return student;
