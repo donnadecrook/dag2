@@ -22,15 +22,15 @@ public class Customer {
         }
         this.name = name;
     }
+    public int getAge() {
+        return age;
+    }
     public void setAge(int age) {
         if (age < 0 || age > 120) {
             System.out.println("Ongeldige leeftijd");
             return;
         }
             this.age = age;
-    }
-    public int getAge() {
-        return age;
     }
     public boolean isStudent() {
         return student;

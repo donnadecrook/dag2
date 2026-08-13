@@ -3,9 +3,6 @@ package nl.globaltraining.dag2;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.lang.Boolean.FALSE;
-import static java.lang.Boolean.TRUE;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -25,5 +22,19 @@ public class Main {
            nummer++;
        }
         System.out.println("In totaal " + films.size() + " films");
+    }
+    public Movie zoekOpTitel(String title, ArrayList<Movie> films) {
+        for (Movie film: films){
+            if (film.getTitle().equals(title)){
+                return film;
+            }
+        }
+        return null;
+    }
+    List<Movie> result = new ArrayList<>();
+        for (Movie film : films) {
+        if (film.getGenre().equals("Fantasy")) {
+            result.add(film);
+        }
     }
 }

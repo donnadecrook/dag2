@@ -11,6 +11,9 @@ public class Movie {
         setDuurInMinuten(duurInMinuten);
         this.genre = genre;
     }
+    public String getTitle() {
+        return title;
+    }
     public void setTitle(String title) {
         if (title == null || title.isBlank()) {
             System.out.println("Ongeldige titel: mag niet leeg zijn");
@@ -18,12 +21,18 @@ public class Movie {
         }
         this.title = title;
     }
+    public int getDuurInMinuten() {
+        return duurInMinuten;
+    }
     public void setDuurInMinuten(int duurInMinuten) {
         if (duurInMinuten <= 0 || duurInMinuten >= 500) {
             System.out.println("Ongeldige duur in minuten");
             return;
         }
         this.duurInMinuten = duurInMinuten;
+    }
+    public String getGenre() {
+        return genre;
     }
     public String toString() {
         return title + ", " + duurInMinuten + " min, " + genre + " ";
