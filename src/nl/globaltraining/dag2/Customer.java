@@ -4,11 +4,16 @@ public class Customer {
     private String name;
     private int age;
     private String email;
+    boolean student;
 
-    public Customer(String name, int age, String email) {
+    public Customer(String name, int age, String email, boolean student) {
          setName(name);
          setAge(age);
-         this.email =  email;
+         this.email = email;
+         this.student = student;
+    }
+    public String getName() {
+        return name;
     }
     public void setName(String name) {
         if (name == null || name.isBlank()) {
@@ -23,6 +28,15 @@ public class Customer {
             return;
         }
             this.age = age;
+    }
+    public int getAge() {
+        return age;
+    }
+    public boolean isStudent() {
+        return student;
+    }
+    public void setStudent(boolean student) {
+        this.student = student;
     }
     public String toString() {
         return name + ", " + age + " jaar, " + email + " ";
